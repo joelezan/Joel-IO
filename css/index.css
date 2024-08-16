@@ -1,6 +1,7 @@
 body {
     background-color: #f5f5dc;
     color: blue;
+    margin:0;
 
 }
 
@@ -17,6 +18,10 @@ body {
     border: dotted;
     margin-right: 350px;
     margin-left: 350px;
+    
+}
+#exp {
+    display: flex;
 }
 
 #Experience div {
@@ -72,4 +77,17 @@ h3 {
     width: 60px;  
     height: auto;
     margin-right: 10px; 
+}
+nav{
+    position: fixed;
+}
+
+#Connect {
+    text-align: center;
+    display: flex;
+    margin: 0 600px;
+    list-style-type: none;
+}
+#connect-title{
+    text-align: center;
 }
