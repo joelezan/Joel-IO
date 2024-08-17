@@ -1,3 +1,5 @@
+
+/* Default Styles (Desktop-First) */
 body {
     background-color: #f5f5dc;
     color: blue;
@@ -14,14 +16,20 @@ body {
 
 #Experience {
     text-align: center;
-    padding: 50px;
+    padding: 10px;
     border: dotted;
     margin-right: 350px;
     margin-left: 350px;
     
 }
 #exp {
-    display: flex;
+    display: grid;
+    resize: both;
+    overflow: auto;
+    gap: 4px;
+    border: 1px solid lightblue;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr) repeat(1,3fr) repeat(1,1fr);
 }
 
 #Experience div {
@@ -69,8 +77,8 @@ h3 {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 .name img {
-    height: 300px;
-    width: auto;
+    height: auto;
+    width: 300px;
 }
 
 .logo img {
@@ -85,9 +93,55 @@ nav{
 #Connect {
     text-align: center;
     display: flex;
-    margin: 0 600px;
+    justify-content: center; 
+    margin: 0 auto;
     list-style-type: none;
 }
 #connect-title{
     text-align: center;
+}
+
+/* Mobile Styles */
+@media (max-width: 800px) {
+    #About {
+        margin: 20px 10px;
+        padding: 30px;
+    }
+
+    #Experience {
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+
+    .name {
+        font-size: 2.5rem;
+    }
+}
+
+/* Tablet Styles */
+@media (max-width: 1024px) {
+    #About {
+        margin: 50px 75px;
+        padding: 40px;
+    }
+
+    #Experience {
+        margin-right: 50px;
+        margin-left: 50px;
+    }
+    h1 {
+        font-size: 2.5rem; 
+    }
+
+    h2 {
+        font-size: 2rem; 
+    }
+
+    h3 {
+        font-size: 1.75rem;
+    }
+
+    .name {
+        font-size: 3.5rem; 
+    }
 }
