@@ -104,10 +104,6 @@ nav{
     text-align: center;
 }
 
-input{
-    padding: 8px;
-}
-
 @media (max-width: 800px) {
     #About {
         margin: 20px 10px;
