@@ -1,10 +1,7 @@
-
-/* Default Styles (Desktop-First) */
 body {
-    background-color: #f5f5dc;
-    color: blue;
-    margin:0;
-
+    background-color: #67b6db;
+    color: #1a1a1a;
+    margin: 0;
 }
 
 #About {
@@ -12,34 +9,34 @@ body {
     margin: 100px 150px 50px;
     background-color: rgba(243, 244, 244, 0.97);
     padding: 50px;
+    color: #333;
 }
 
 #Experience {
     text-align: center;
     padding: 10px;
-    border: dotted;
+    border: dotted #00509E;
     margin-right: 350px;
     margin-left: 350px;
-    
 }
+
 #exp {
     display: grid;
     resize: both;
     overflow: auto;
     gap: 4px;
-    border: 1px solid lightblue;
+    border: 1px solid #0096d6;
     grid-template-rows: repeat(2, 1fr);
-    grid-template-columns: repeat(1, 1fr) repeat(1,3fr) repeat(1,1fr);
+    grid-template-columns: repeat(1, 1fr) repeat(1, 3fr) repeat(1, 1fr);
 }
 
 #Experience div {
-    background-color: #f9f9f9;
-    border-left: 4px solid darkblue;
+    background-color: #ffffff;
+    border-left: 4px solid #00509E;
     padding: 20px;
     margin-bottom: 15px;
     border-radius: 5px;
 }
-
 
 #Experience p {
     font-size: 1.1rem;
@@ -50,25 +47,25 @@ body {
 h1 {
     font-size: 3rem; 
     font-weight: bold; 
-    color: navy; 
+    color: #002244;
 }
 
 h2 {
     font-size: 2.5rem; 
     font-weight: 600; 
-    color: darkblue; 
+    color: #003366;
 }
 
 h3 {
     font-size: 2rem; 
     font-weight: 500; 
-    color: teal; 
+    color: #004488;
 }
 
 .name {
     font-size: 4rem;
     font-weight: 800;
-    color: darkslateblue;
+    color: #4b0082;
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -76,6 +73,7 @@ h3 {
     margin-bottom: 20px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
+
 .name img {
     height: auto;
     width: 300px;
@@ -86,8 +84,12 @@ h3 {
     height: auto;
     margin-right: 10px; 
 }
+
 nav{
     position: fixed;
+    right:0;
+    border: solid blue;
+    background-color: #0096d6;
 }
 
 #Connect {
@@ -97,11 +99,15 @@ nav{
     margin: 0 auto;
     list-style-type: none;
 }
-#connect-title{
+
+#connect-title {
     text-align: center;
 }
 
-/* Mobile Styles */
+input{
+    padding: 8px;
+}
+
 @media (max-width: 800px) {
     #About {
         margin: 20px 10px;
@@ -118,7 +124,6 @@ nav{
     }
 }
 
-/* Tablet Styles */
 @media (max-width: 1024px) {
     #About {
         margin: 50px 75px;
@@ -129,6 +134,7 @@ nav{
         margin-right: 50px;
         margin-left: 50px;
     }
+
     h1 {
         font-size: 2.5rem; 
     }
