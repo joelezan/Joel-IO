@@ -99,6 +99,12 @@ nav{
     margin: 0 auto;
     list-style-type: none;
 }
+#projects ul{
+    background-color: #ffffff;
+    display: inline-block; 
+    padding: 20px; 
+}
+
 
 #connect-title {
     text-align: center;
